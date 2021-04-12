@@ -1,6 +1,7 @@
 namespace SpriteKind {
     export const Block = SpriteKind.create()
 }
+// https://www.deviantart.com/mattcantdraw/art/Star-Wars-Space-Invaders-286179610
 function initializePlayer () {
     falcon = sprites.create(img`
         . . . . . 7 . . 7 . . . . . 
@@ -57,13 +58,95 @@ function setupGame () {
     scene.centerCameraAt(0, 0)
 }
 function blocker (x: number, y: number) {
-    for (let height = 0; height <= 20; height++) {
+    for (let height2 = 0; height2 <= 14; height2++) {
         for (let width = 0; width <= 20; width++) {
-            mySprite = sprites.create(img`
-                7 7 
-                7 7 
-                `, SpriteKind.Block)
-            mySprite.setPosition(width + x, height + y)
+            if (height2 == 0 && width == 0) {
+            	
+            } else if (height2 == 0 && width == 1) {
+            	
+            } else if (height2 == 0 && width == 2) {
+            	
+            } else if (height2 == 1 && width == 0) {
+            	
+            } else if (height2 == 1 && width == 1) {
+            	
+            } else if (height2 == 2 && width == 0) {
+            	
+            } else if (height2 == 0 && width == 20) {
+            	
+            } else if (height2 == 0 && width == 19) {
+            	
+            } else if (height2 == 0 && width == 18) {
+            	
+            } else if (height2 == 1 && width == 20) {
+            	
+            } else if (height2 == 1 && width == 19) {
+            	
+            } else if (height2 == 2 && width == 20) {
+            	
+            } else if (height2 == 14 && width == 5) {
+            	
+            } else if (height2 == 14 && width == 6) {
+            	
+            } else if (height2 == 14 && width == 7) {
+            	
+            } else if (height2 == 14 && width == 8) {
+            	
+            } else if (height2 == 14 && width == 9) {
+            	
+            } else if (height2 == 14 && width == 10) {
+            	
+            } else if (height2 == 14 && width == 11) {
+            	
+            } else if (height2 == 14 && width == 12) {
+            	
+            } else if (height2 == 14 && width == 13) {
+            	
+            } else if (height2 == 14 && width == 14) {
+            	
+            } else if (height2 == 13 && width == 6) {
+            	
+            } else if (height2 == 13 && width == 7) {
+            	
+            } else if (height2 == 13 && width == 8) {
+            	
+            } else if (height2 == 13 && width == 9) {
+            	
+            } else if (height2 == 13 && width == 10) {
+            	
+            } else if (height2 == 13 && width == 11) {
+            	
+            } else if (height2 == 13 && width == 12) {
+            	
+            } else if (height2 == 13 && width == 13) {
+            	
+            } else if (height2 == 12 && width == 7) {
+            	
+            } else if (height2 == 12 && width == 8) {
+            	
+            } else if (height2 == 12 && width == 9) {
+            	
+            } else if (height2 == 12 && width == 10) {
+            	
+            } else if (height2 == 12 && width == 11) {
+            	
+            } else if (height2 == 12 && width == 12) {
+            	
+            } else if (height2 == 11 && width == 8) {
+            	
+            } else if (height2 == 11 && width == 9) {
+            	
+            } else if (height2 == 11 && width == 10) {
+            	
+            } else if (height2 == 11 && width == 11) {
+            	
+            } else {
+                mySprite = sprites.create(img`
+                    7 7 
+                    7 7 
+                    `, SpriteKind.Block)
+                mySprite.setPosition(width + x, height2 + y)
+            }
         }
     }
 }
@@ -83,7 +166,6 @@ function initializeBlocker () {
     blocker(70, 60)
     blocker(120, 60)
 }
-// https://www.deviantart.com/mattcantdraw/art/Star-Wars-Space-Invaders-286179610
 let projectileExists = 0
 let mySprite: Sprite = null
 let projectile: Sprite = null
